@@ -1,0 +1,528 @@
+@media only screen and (min-width: 1600px) {
+    .container-fluid {
+        max-width: 1800px;
+    }
+
+    .container {
+        max-width: 1600px;
+    }
+}
+
+* {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+:root {
+    --pink    : #D291BC;
+    --pink-100: #F9EAF4;
+    --black   : #000;
+    --white   : #fff;
+    --ff-pf   : 'Pacifico', cursive;
+    --ff-bl   : 'Barlow', sans-serif;
+    --ff-rch  : 'Rochester', cursive;
+}
+
+.bg-pink {
+    background-color: var(--pink);
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.bg-pink-100 {
+    background-color: var(--pink-100);
+}
+
+.pink-100 {
+    color: var(--pink-100);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.black {
+    color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.white {
+    color: var(--white);
+}
+
+.ff-bl {
+    font-family: var(--ff-bl);
+}
+
+.ff-pf {
+    font-family: var(--ff-pf);
+}
+
+.ff-rch {
+    font-family: var(--ff-rch);
+}
+
+.space {
+    padding: 50px;
+}
+
+.space-y {
+    padding: 50px 0;
+}
+
+.space-x {
+    padding: 0 50px;
+}
+
+
+.space-top {
+    padding: 50px 0 0;
+}
+
+.title {
+    font-family: var(--ff-rch);
+    font-size  : 100px;
+    color      : var(--pink);
+}
+
+.subtitle {
+    margin          : 10px 0 16px;
+    padding         : 10px 20px;
+    font-size       : 25px;
+    font-family     : var(--ff-bl);
+    font-weight     : 700;
+    letter-spacing  : 2.5px;
+    color           : var(--white);
+    background-color: var(--pink);
+    display         : inline-block;
+    border-radius   : 5px;
+    text-align      : center;
+}
+
+.desc {
+    font-size     : 19px;
+    text-align    : center;
+    font-family   : var(--ff-bl);
+    /* padding    : 0 75px; */
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .title {
+        font-size: 64px;
+    }
+
+    .subtitle {
+
+        font-size: 22px;
+    }
+
+    .space {
+        padding: 35px;
+    }
+
+    .space-top {
+        padding-top: 35px;
+    }
+
+    .space-x {
+        padding: 0 40px;
+    }
+
+    .space-y {
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .subtitle {
+
+        font-size: 13px;
+
+    }
+
+    .space {
+        padding: 25px;
+    }
+
+    .space-top {
+        padding-top: 35px;
+    }
+
+    .space-x {
+        padding: 0 40px;
+    }
+
+    .space-y {
+        padding: 40px 0;
+    }
+}
+
+/* -------------------Side Pattern ----------*/
+.side-pattern {
+    width            : 100%;
+    background-image : url(../img/pattern.svg);
+    background-repeat: repeat-y;
+    background-size  : contain;
+}
+
+@media only screen and (max-width: 1024px) {
+    .side-pattern {
+        background-size: contain;
+    }
+}
+
+/* -------------------- Header -------------------- */
+nav {
+    height: 100%
+}
+.nav-link {
+    font-size: 24px;
+}
+
+.nav-link:hover {
+    color             : var(--white);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav-link {
+        font-size: 18px;
+    }
+}
+
+
+/*-------------------- Hero Header --------------------*/
+.bg-img {
+    background-image   : -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(210, 145, 188, 0.5))), url(../img/groom-black-tuxedo-hugs-tender-stunning-bride-while-they-stand.jpg);
+    background-image   : -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(210, 145, 188, 0.5) 100%), url(../img/groom-black-tuxedo-hugs-tender-stunning-bride-while-they-stand.jpg);
+    background-image   : linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(210, 145, 188, 0.5) 100%), url(../img/groom-black-tuxedo-hugs-tender-stunning-bride-while-they-stand.jpg);
+    background-position: center;
+    background-size    : cover;
+    position           : relative;
+    height             : 95vh;
+}
+
+.hero-text {
+    position         : absolute;
+    top              : 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform    : translate(0, -50%);
+    transform        : translate(0, -50%);
+    color            : white;
+}
+
+.hero-text h1 {
+    font-size: 100px;
+}
+
+.hero-text h2 {
+    font-size: 46px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 78px;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .hero-text h1 {
+        font-size: 50px;
+    }
+
+    .hero-text h2 {
+        font-size: 26px;
+    }
+}
+
+/*-------------------- ABOUT BRIDE AND GROOM --------------------*/
+
+@media only screen and (min-width: 768px) {
+    .border-right {
+        border-right: 1px solid var(--pink);
+    }
+
+    .border-left {
+        border-left: 1px solid var(--pink);
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+}
+
+
+.groom .title,
+.bride .title {
+    font-size: 56px;
+    color    : var(--pink);
+    margin   : 0 0 25px;
+}
+
+.groom .title>div,
+.bride .title>div {
+    font-size : 29px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .groom .title,
+    .bride .title {
+        font-size : 32px;
+        text-align: center;
+    }
+
+    .groom .desc,
+    .bride .desc {
+        font-size : 15px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .groom .title,
+    .bride .title {
+        text-align   : center;
+        font-size    : 32px;
+        /* margin    : 15px 0; */
+    }
+
+    .groom .desc,
+    .bride .desc {
+        text-align: center;
+        font-size : 14px;
+    }
+}
+
+
+/*-------------------- Our Love Story --------------------*/
+.story-date {
+    margin     : 0;
+    font-family: var(--ff-bl);
+    font-size  : 25px;
+    color      : var(--pink);
+}
+
+.story-title {
+    margin     : 0;
+    font-family: var(--ff-rch);
+    font-size  : 62px;
+    color      : var(--pink);
+}
+
+.story-desc {
+    font-family: var(--ff-bl);
+    font-size  : 22px;
+    color      : var(--black);
+}
+
+.our-love-story .card {
+    background: transparent;
+    border    : 0;
+}
+
+.bg-pink-100 {
+    border-radius      : 25px;
+    background-image   : url(../img/rose.svg);
+    background-position: right bottom;
+    background-repeat  : no-repeat;
+}
+
+.img img {
+    border       : 15px var(--pink) solid;
+    border-radius: 225px;
+    padding      : 12px;
+}
+
+.col-lg-6+.col-lg-4 {
+    margin: 25px;
+}
+
+.story-line {
+    font-size : 50px;
+    color     : var(--pink);
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .story-date {
+        margin     : 0;
+        font-family: var(--ff-bl);
+        font-size  : 14px;
+        color      : var(--pink);
+    }
+
+    .story-title {
+        margin     : 0;
+        font-family: var(--ff-rch);
+        font-size  : 36px;
+        color      : var(--pink);
+    }
+
+    .story-desc {
+        font-family: var(--ff-bl);
+        font-size  : 13px;
+        color      : var(--black);
+    }
+
+    .story-line {
+        font-size: 36px;
+    }
+
+    .img img {
+        border       : 10px var(--pink) solid;
+        border-radius: 225px;
+        padding      : 7px;
+    }
+
+    .our-love-story .space {
+        padding: 36px;
+    }
+}
+
+
+/*-------------------- 4. Family & Friends --------------------*/
+.family-friends .card-body {
+    margin : 0 15px;
+    padding: 0;
+}
+
+.img-wrapper {
+    border-radius: 100%;
+    overflow     : hidden;
+}
+
+.family-friends .img-wrapper img {
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition     : all 0.5s ease-in-out;
+    transition        : all 0.5s ease-in-out;
+}
+
+.family-friends .img-wrapper:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform    : scale(1.2);
+    transform        : scale(1.2);
+}
+
+.name {
+    margin-top    : 15px;
+    letter-spacing: 1.2px;
+    font-weight   : 700;
+    font-size     : 25px;
+    color         : var(--pink);
+    text-align    : center;
+}
+
+.relation {
+    font-size : 25px;
+    color     : var(--pink);
+    text-align: center;
+}
+
+/*-------------------- EVENTS --------------------*/
+.event-title {
+    font-family: var(--ff-pf);
+    font-size  : 35px
+}
+
+.events {
+    margin: 25px 0;
+}
+
+.event-time {
+    font-family: var(--ff-bl);
+    font-size  : 25px;
+}
+
+.event-time span,
+.event-date span {
+    margin-left: 15px;
+}
+
+.event-date {
+    font-family: var(--ff-bl);
+    font-size  : 25px;
+}
+
+.when-where a {
+    text-decoration   : none;
+    /* margin         : 15px 0 0; */
+    padding           : 11px 56px;
+    font-size         : 25px;
+    text-shadow       : 0px 3px 3px rgb(0 0 0 / 25%);
+    -webkit-box-shadow: 0px 2px 3px rgb(97 13 68 / 79%);
+    box-shadow        : 0px 2px 3px rgb(97 13 68 / 79%);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+.when-where a:hover {
+    -webkit-box-shadow: 0px 8px 15px rgb(97 13 68 / 79%);
+    box-shadow        : 0px 8px 15px rgb(97 13 68 / 79%);
+    color             : var(--white)
+}
+
+figure img {
+    padding: 0 10px
+}
+
+/*------------------- Photo Gallery ---------------*/
+
+.gallery-column {
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column;
+    width                : 33%;
+    -webkit-box-pack     : justify;
+    -ms-flex-pack        : justify;
+    justify-content      : space-between;
+}
+
+.gallery-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-image {
+    display           : block;
+    width             : 100%;
+    -webkit-transition: 0.3s;
+    -o-transition     : 0.3s;
+    transition        : 0.3s;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    figure img {
+        padding: 0
+    }
+}
